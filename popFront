@@ -1,0 +1,30 @@
+/*Array: Pop Front
+Given an array, remove and return the value at the beginning of the array. Do this without using any built-in array methods except pop(). */
+
+function popFront(array){
+    var value = array[0];
+    for(var i = 0; i < array.length-1; i++){
+        array[i] = array[i+1];
+    }
+    array.pop();
+    array.length--;
+    console.log(array);
+    return value;
+}
+popFront([1,2, "bob"]);
+
+function popFront(array) {
+	var data = array[0];
+
+	for(var i = 0; i < array.length - 1; i++) {
+		array[i] = array[i + 1];
+	}
+
+	array.length -= 1;
+
+	console.log("popFront - Array: ", array);
+	console.log(data);
+}
+popFront([1,2,3,4,5]);
+
+
