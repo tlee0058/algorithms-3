@@ -1,19 +1,10 @@
 /*
-Array: Concat
-Replicate JavaScript’s concat(). Create a standalone function that accepts two arrays. Return a new array containing the first array’s elements, followed by the second array’s elements. Do not alter the original arrays.
+Array: Second-to-Last
+Return the second-to-last element of an array. Given [42,true,4,"Liam",7], return "Liam". If the array is too short, return null.*/
 
-Example: arrConcat( ['a','b'], [1,2] ) should return new array ['a','b',1,2].*/
-
-function concatArr(arr1, arr2){
-    var newarr=[];
-    for(var i = 0; i < arr1.length; i++){
-        newarr.push(arr1[i]);
-    }
-    for(var i = 0; i <arr2.length; i++){
-        newarr.push(arr2[i]);
-    }
-    console.log(newarr);
+function secondLast(arr){
+    var val = arr[arr.length-2];
+    console.log(val);
+    return (val);
 }
-
-concatArr(['a', 'b'], [1,2]);
-
+secondLast([1,2,3,4,4,5,6]);
